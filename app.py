@@ -64,7 +64,7 @@ def generate(name):
     # Guest-name area — will be adjusted after visual test
     # Elegant italic + bold guest name
     font_paths = [
-        "/system/fonts/Roboto-BoldItalic.ttf",
+        os.path.join(BASE, "fonts", "GuestName-Regular.ttf"),
         "/system/fonts/Roboto-Italic.ttf",
         "/system/fonts/Roboto-Bold.ttf",
         "/system/fonts/Roboto-Regular.ttf"

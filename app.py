@@ -71,7 +71,7 @@ def generate(name):
     ]
 
     font = None
-    size = 42
+    size = 64
 
     for fp in font_paths:
         if os.path.exists(fp):
@@ -86,7 +86,7 @@ def generate(name):
     # Automatically reduce size for long names
     max_width = 760
 
-    while size >= 28:
+    while size >= 38:
         for fp in font_paths:
             if os.path.exists(fp):
                 test_font = ImageFont.truetype(fp, size)
@@ -110,7 +110,7 @@ def generate(name):
     x = (im.width - tw) // 2
 
     # Place name ABOVE the original underline
-    y = 395
+    y = 375
 
     draw.text(
         (x, y),
